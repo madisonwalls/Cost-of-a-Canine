@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  
+  <title>Pie</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <link href="dist/css/vendor/normalize.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="dist/css/vendor/foundation.css" media="screen" rel="stylesheet" type="text/css" />
+  
+ 
+  <script src="dist/js/vendor/modernizr.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+
+<link href="dist/css/pizza.css" media="screen, projector, print" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    
+  <div class="container dogdonuts">
+    
+                      <div class="row">
+                            <div class="col-md-6 col-xs-8 donut-title-1">
+                          <img src="../graphics/mediumdog.png" width="100%">
+                            </div>
+                            
+                            
+                           <div class="col-md-6 col-xs-4 dogs">
+                             <img src="../graphics/dog2.png" width="100%">
+                          </div>
+                      </div>
+                      
+                      <div class="row">
+                              <div class="col-md-4 col-xs-6 data">
+                                     <p>Scroll over one of the essential costs below to see how much of your total costs come from each item for a Medium dog.</p>
+
+									 <ul data-pie-id="donut" data-options='{"donut":"true"}'>
+										<li data-value="115">Miscellaneous: $90</li>
+										<li data-value="408">Hair Groom: $320</li>
+										<li data-value="110">Training: $110</li>
+										<li data-value="125">Crate: $95</li>
+										<li data-value="220">Spay/Neuter: $200</li>
+										<li data-value="225">Health Insurance: $225</li>
+										<li data-value="75">Toys and Treats: $55</li>
+										<li data-value="330">Medical: $305</li>
+										<li data-value="235">Food: $120</li>
+                                        <li data-value="40">Carrier Bag: $40</li>
+									</ul>
+                                     
+                              </div>
+								
+                               <div class="col-md-8 col-xs-6">
+									<div id="donut"></div>
+								  </div>
+                      </div>
+  </div>
+						
+
+  <br><br><br>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="dist/js/vendor/dependencies.js"></script>
+  <script src="dist/js/pizza.js"></script>
+  <script>
+    $(window).load(function() {
+      Pizza.init();
+      $(document).foundation();
+    });
+  </script>
+</body>
+</html>
